@@ -31,12 +31,12 @@ class Game {
         page1Para.textContent = this.params["page-1"];
 
         // THIS NEEDS TO BE HERE AFTER ALL PROCESSING!
-        this.show(page1View)
+        this.show(page1View);
     }
 
     setupPage2View() {
         // Start showing contents or generating new elements based on params
-        var page1View = document.getElementById('page-1');
+        var page2View = document.getElementById('page-2');
         var page2Para = document.getElementById('page-2-p');
         page2Para.textContent = this.params["page-2"];
         
@@ -49,6 +49,15 @@ class Game {
         // Hides previous section and sets up next section
         var startButton = document.getElementById("start-button");
         this.hide(startButton);
+
+        /*
+            Add event listeners to switch between pages
+
+            We create an arrow function for event listeners because otherwise
+            it won't remember the 'this' context
+        */
+        document.getElementById('page-1-btn').addEventListener('click', () => this.switchToPage2View());
+        document.getElementById('page-2-btn').addEventListener('click', () => this.teardownGameUI());
 
         this.setupPage1View(); 
     }
