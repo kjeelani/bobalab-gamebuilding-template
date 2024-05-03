@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR GAME NAME!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>YOUR GAME NAME!</h1>
+        <p>Game Description...</p>
+    </header>
+    <main>
+        <!-- Start Screen -->
+        <button id="start-button">Start Game</button>
+
+        <!-- Page 1 -->
+        <div id="page-1" class="hidden">
+            <h3>This is Page 1</h3>
+            <p id="'page-1-p">Your game components go here</p>
+            <button id="page-1-btn">To Page 2</button>
+        </div>
+
+        <!-- Page 2 -->
+        <div id="page-2" class="hidden">
+            <h3>This is Page 2</h3>
+            <p id="'page-2-p">Your game components go here</p>
+            <button id="page-2-btn">Finish Game</button>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div class="game-over hidden" id="game-over">
+            <div class="game-over-card">
+                <h2>Game Over!</h2>
+                <button id="restart-game-btn">Restart</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

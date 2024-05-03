@@ -1,0 +1,38 @@
+/* 
+    THIS IS NECESSARY FOR THE GAME TO FUNCTION 
+    Is given to elements who are not ready to be displayed yet
+*/
+.hidden {
+    display: none;
+}
+
+/* Paste in your HTML to ChatGPT to get some good CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #318773;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+header p {
+    margin-top: 5px;
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
